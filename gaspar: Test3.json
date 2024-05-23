@@ -21,7 +21,6 @@
                     "targetPort": "1_in"
                 }
             ],
-            "hash": "e43fa2f1feae5d7b170348ca5d45b1bc24721a19",
             "nodes": {
                 "0": {
                     "data": {
@@ -82,7 +81,13 @@
                     "y": 564.5
                 }
             },
-            "notes": ""
+            "notes": "",
+            "origin": {
+                "playbook_id": 148,
+                "playbook_name": "gaspar:Test3",
+                "playbook_repo_id": 3,
+                "playbook_repo_name": "testcolon"
+            }
         },
         "input_spec": null,
         "output_spec": null,
