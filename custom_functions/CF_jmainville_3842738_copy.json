@@ -1,0 +1,38 @@
+{
+    "create_time": "2025-11-07T00:35:10.871079+00:00",
+    "custom_function_id": "43bd9fa731c67c8baa28dfe12e95935da9b3d278",
+    "description": "",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [
+                "agari policy name"
+            ],
+            "description": "aaa",
+            "input_type": "list",
+            "name": "aaaa",
+            "placeholder": "aaa"
+        },
+        {
+            "contains_type": [
+                "abnormal action id"
+            ],
+            "description": "vvv",
+            "input_type": "list",
+            "name": "vvv",
+            "placeholder": "vvv"
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [
+                "airlockdigital applicationid"
+            ],
+            "data_path": "bbb_out",
+            "description": ""
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "7.1.0.204",
+    "python_version": "3.9"
+}
