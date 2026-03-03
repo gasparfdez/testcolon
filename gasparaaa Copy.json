@@ -12,9 +12,16 @@
                     "sourcePort": "0_out",
                     "targetNode": "2",
                     "targetPort": "2_in"
+                },
+                {
+                    "id": "port_2_to_port_3",
+                    "sourceNode": "2",
+                    "sourcePort": "2_out",
+                    "targetNode": "3",
+                    "targetPort": "3_in"
                 }
             ],
-            "hash": "5d6c6d260f412559b688f01d31109b3cde8ae1d7",
+            "hash": "aa12b70d4180b01ecdac0052501ab8cbfe9808b7",
             "nodes": {
                 "0": {
                     "data": {
@@ -71,15 +78,51 @@
                     "warnings": {},
                     "x": 1000,
                     "y": 560
+                },
+                "3": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionId": 1,
+                        "functionName": "call_api_1",
+                        "id": "3",
+                        "loop": {
+                            "conditions": [
+                                {
+                                    "comparisons": [
+                                        {
+                                            "comparisonKey": "comparison_key_0",
+                                            "op": "==",
+                                            "param": "",
+                                            "value": ""
+                                        }
+                                    ],
+                                    "conditionIndex": 0,
+                                    "conditionKey": "condition_key_0",
+                                    "logic": "and",
+                                    "type": "if"
+                                }
+                            ],
+                            "enabled": false,
+                            "exitAfterUnit": "m",
+                            "exitAfterValue": 10,
+                            "exitConditionEnabled": false,
+                            "exitLoopAfter": 2,
+                            "pauseUnit": "m",
+                            "pauseValue": 2
+                        },
+                        "type": "utility"
+                    },
+                    "errors": {},
+                    "id": "3",
+                    "type": "utility",
+                    "warnings": {},
+                    "x": 1000,
+                    "y": 736
                 }
             },
-            "notes": "",
-            "origin": {
-                "playbook_id": 5940,
-                "playbook_name": "gasparaaa",
-                "playbook_repo_id": 2,
-                "playbook_repo_name": "local"
-            }
+            "notes": ""
         },
         "input_spec": null,
         "output_spec": null,
@@ -89,7 +132,7 @@
         "schema": "5.0.24",
         "version": "8.4.0.158"
     },
-    "create_time": "2026-03-03T10:05:19.211182+00:00",
+    "create_time": "2026-03-03T10:05:49.812130+00:00",
     "draft_mode": false,
     "labels": [
         "*"

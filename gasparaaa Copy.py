@@ -56,6 +56,25 @@ def hola(action=None, success=None, container=None, results=None, handle=None, f
 
     phantom.save_block_result(key="hola_called", value="True")
 
+    call_api_1(container=container)
+
+    return
+
+
+@phantom.playbook_block()
+def call_api_1(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, loop_state_json=None, **kwargs):
+    phantom.debug("call_api_1() called")
+
+    ################################################################################
+    ## Custom Code Start
+    ################################################################################
+
+    # Write your custom code here...
+
+    ################################################################################
+    ## Custom Code End
+    ################################################################################
+
     return
 
 
