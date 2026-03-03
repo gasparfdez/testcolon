@@ -1,0 +1,98 @@
+{
+    "blockly": false,
+    "blockly_xml": "<xml></xml>",
+    "category": "Uncategorized",
+    "coa": {
+        "data": {
+            "description": "",
+            "edges": [
+                {
+                    "id": "port_0_to_port_2",
+                    "sourceNode": "0",
+                    "sourcePort": "0_out",
+                    "targetNode": "2",
+                    "targetPort": "2_in"
+                }
+            ],
+            "hash": "5d6c6d260f412559b688f01d31109b3cde8ae1d7",
+            "nodes": {
+                "0": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionName": "on_start",
+                        "id": "0",
+                        "type": "start"
+                    },
+                    "errors": {},
+                    "id": "0",
+                    "type": "start",
+                    "warnings": {},
+                    "x": 1020,
+                    "y": 419.9999999999998
+                },
+                "1": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionName": "on_finish",
+                        "id": "1",
+                        "type": "end"
+                    },
+                    "errors": {},
+                    "id": "1",
+                    "type": "end",
+                    "warnings": {},
+                    "x": 1000,
+                    "y": 1000
+                },
+                "2": {
+                    "data": {
+                        "advanced": {
+                            "customName": "hola",
+                            "customNameId": 0,
+                            "description": "hola",
+                            "join": [],
+                            "note": "hola"
+                        },
+                        "functionId": 1,
+                        "functionName": "hola",
+                        "id": "2",
+                        "inputParameters": [],
+                        "outputVariables": [],
+                        "type": "code"
+                    },
+                    "errors": {},
+                    "id": "2",
+                    "type": "code",
+                    "userCode": "\n    def check_mv_domain(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, loop_state_json=None, **kwargs):\n        mv_domain_values = phantom.collect2(container=container, datapath=[\"artifact:*.cef.mv_domain\"])\n\n        has_value = False\n        for item in mv_domain_values:\n            value = item[0] if item else None\n            if value is not None:\n                if isinstance(value, str) and value != \"\":\n                    has_value = True\n                    break\n                elif isinstance(value, list) and len(value) > 0:\n                    has_value = True\n                    break\n\n        phantom.save_run_data(key=\"mv_domain_has_value\", value=str(has_value))\n        return\n    \n    check_mv_domain()\n\n\n\n",
+                    "warnings": {},
+                    "x": 1000,
+                    "y": 560
+                }
+            },
+            "notes": "",
+            "origin": {
+                "playbook_id": 5940,
+                "playbook_name": "gasparaaa",
+                "playbook_repo_id": 2,
+                "playbook_repo_name": "local"
+            }
+        },
+        "input_spec": null,
+        "output_spec": null,
+        "playbook_trigger": "artifact_created",
+        "playbook_type": "automation",
+        "python_version": "3.13",
+        "schema": "5.0.24",
+        "version": "8.4.0.158"
+    },
+    "create_time": "2026-03-03T10:05:19.211182+00:00",
+    "draft_mode": false,
+    "labels": [
+        "*"
+    ],
+    "tags": []
+}
