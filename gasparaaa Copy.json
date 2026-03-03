@@ -19,16 +19,9 @@
                     "sourcePort": "2_out",
                     "targetNode": "3",
                     "targetPort": "3_in"
-                },
-                {
-                    "id": "port_3_to_port_4",
-                    "sourceNode": "3",
-                    "sourcePort": "3_out",
-                    "targetNode": "4",
-                    "targetPort": "4_in"
                 }
             ],
-            "hash": "2daee6898805c9a4e81d47dcd457d07d4740f062",
+            "hash": "aa12b70d4180b01ecdac0052501ab8cbfe9808b7",
             "nodes": {
                 "0": {
                     "data": {
@@ -127,51 +120,9 @@
                     "warnings": {},
                     "x": 1000,
                     "y": 736
-                },
-                "4": {
-                    "data": {
-                        "advanced": {
-                            "join": []
-                        },
-                        "functionId": 2,
-                        "functionName": "call_api_2",
-                        "id": "4",
-                        "loop": {
-                            "conditions": [
-                                {
-                                    "comparisons": [
-                                        {
-                                            "comparisonKey": "comparison_key_0",
-                                            "op": "==",
-                                            "param": "",
-                                            "value": ""
-                                        }
-                                    ],
-                                    "conditionIndex": 0,
-                                    "conditionKey": "condition_key_0",
-                                    "logic": "and",
-                                    "type": "if"
-                                }
-                            ],
-                            "enabled": false,
-                            "exitAfterUnit": "m",
-                            "exitAfterValue": 10,
-                            "exitConditionEnabled": false,
-                            "exitLoopAfter": 2,
-                            "pauseUnit": "m",
-                            "pauseValue": 2
-                        },
-                        "type": "utility"
-                    },
-                    "errors": {},
-                    "id": "4",
-                    "type": "utility",
-                    "warnings": {},
-                    "x": 1000,
-                    "y": 884
                 }
             },
-            "notes": ""
+            "notes": "nota1"
         },
         "input_spec": null,
         "output_spec": null,
@@ -181,7 +132,7 @@
         "schema": "5.0.24",
         "version": "8.4.0.158"
     },
-    "create_time": "2026-03-03T10:06:02.594948+00:00",
+    "create_time": "2026-03-03T10:34:03.825924+00:00",
     "draft_mode": false,
     "labels": [
         "*"
